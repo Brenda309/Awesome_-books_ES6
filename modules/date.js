@@ -1,18 +1,15 @@
-import { getDocumentTypeNodeName } from "parse5/lib/tree-adapters/default";
-import { DateTime } from "../luxon";
+import { DateTime } from '../luxon.js';
 class date{
     static dates (){
     const time = DateTime.now().toLocaleString({
-        month: 'long',
+        onth: 'long',
         day: 'numeric',
         year: 'numeric',
         hour: 'numeric',
         minute: '2-digit',
-        second: '2-digmit',
+        second: '2-digit',
     })
-
-constgetdate = document.querySelector('.date');
-   const getDate=  document.querySelector('.date');
+      const getDate=  document.querySelector('.date');
       getDate.innerHTML = time;
     }
 }
