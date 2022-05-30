@@ -1,6 +1,6 @@
 import add from './modules/add.js';
 import { displayContact, displayBooks, displayInputs } from './modules/navlinks.js';
-import Book from './modules/class.js';
+import Book from './modules/classes.js';
 
 class Books {
   constructor() {
