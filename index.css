@@ -1,54 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  padding: 0;
+  margin: 0;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Awesome Books</title>
-</head>
+.title {
+  font-size: 30px;
+  margin-left: 60px;
+}
 
-<body>
-    <section class = "nav-menu">
-        <nav class="navbar">
-         <h1 class="title">Awesome Books</h1>
-         <ul class="nav-list">
-             <li id ="list" class="list"> List</li>
-              <li id= "new" class="new"> Add-New</li>
-               <li id= "contact" class="contact"> Contact</li>
-         </ul>  
-        </nav>
-    </section>
-       <div class="date">hello</div>
-  <section id= "book-list" class ="book-list">
-      <h2 class="all-books">All awesome books</h2>
-    <ul id="books">
-    </ul>
-  </section>
-  <section id="userInput">
-    <div class="input">
-      <h2 class= "addtitle">Add a new book</h2>
-    <input id="title" type="text" placeholder="Title"  required ><br><br>
-    <input id="author" type="text" placeholder="Author" required ><br><br>
-    <button id="addBtn">Add</button>
-    </div>
-  </section>
-  <section id="contact-us" class="contact-us">
-      <h3 class="info">Contact information</h3>
-      <p class= "para"> Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
-<ul class="conta-info">
-    <li>Our e-mail: mail@gmail.com</li>
-    <li>Our phone number: 0043586534422</li>
-    <li>Our address: streetName 22,84503 City, Country</li>
-</ul>
-  </section>
-  <footer>
-      <p>Copyright....  </p>
-  </footer>
-   <script type= "module" src="./modules/date.js"></script>
-  <script type= "module" src="index.js"></script>
+.nav-menu {
+  border: solid 2px black;
+}
 
-</body>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-</html>
+.nav-list {
+  display: flex;
+  list-style: none;
+  font-size: large;
+  margin-right: 40px;
+}
+
+.list {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.list:hover {
+  background-color: blue;
+}
+
+.new {
+  border-left: black 3px solid;
+  border-right: black 3px solid;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.new:hover {
+  background-color: blue;
+}
+
+.contact:hover {
+  background-color: blue;
+}
+
+button {
+  box-shadow: 2px 1px 0 black;
+}
+
+.book-title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#book-list {
+  display: none;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#userInput {
+  gap: 0.5em;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  padding-top: 200px;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  border: black 3px solid;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#addBtn {
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.myBooks button {
+  margin-left: 10em;
+  border-radius: 0;
+}
+
+.addtitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+#books {
+  border: solid 3px black;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all-books {
+  text-align: center;
+  font-size: 45px;
+}
+
+.myBooks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer p {
+  position: relative;
+  font-size: 25px;
+}
+
+.myBooks p {
+  font-weight: 600;
+}
+
+.myBooks:nth-child(2n) {
+  background-color: lightgray;
+}
+
+.info {
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact-us {
+  display: none;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.para {
+  text-align: center;
+  font-size: 20px;
+}
+
+.conta-info {
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+}
+
+footer {
+  border: solid 4px black;
+}
+.date{
+  text-align: end;
+}
