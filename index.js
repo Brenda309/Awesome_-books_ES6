@@ -1,9 +1,8 @@
 import add from './modules/add.js';
-import{displayContact, displayBooks,displayInputs} from'./modules/navlinks.js'
+import { displayContact, displayBooks, displayInputs } from './modules/navlinks.js';
 import Book from './modules/class.js';
 
-
- class Books {
+class Books {
   constructor() {
     this.array = [];
   }
@@ -36,7 +35,7 @@ addBtn.addEventListener('click', () => {
 // Add book function
 
 add();
-//remove
+// remove
 const remove = () => {
   const rmv = document.getElementsByClassName('rmv');
   for (let i = 0; i < rmv.length; i += 1) {
@@ -57,10 +56,10 @@ remove();
 
 // display constact information
 
-displayContact()
+displayContact();
 // display list of books that were add
 
-displayBooks()
+displayBooks();
 
 // display input field field for use to add a book
 
