@@ -28,8 +28,6 @@ Follow this steps to run this project on your local computer.
 - Then click Enter. Now you are the repository/directory on your local machine.
 
 
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
 ### Setup
