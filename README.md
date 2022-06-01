@@ -17,8 +17,9 @@
 
 
 ## 🔰 Getting Started
+Follow this steps to run this project on your local computer.
 
-- Please go to"https://github.com/Brenda309".
+- Go to"https://github.com/Brenda309".
 - Click on repositories.
 - Choose repository "Book-Shelf" or click to "https://github.com/Brenda309/Book-shelf/" Then clone the repository to your local machine by using the - --- following steps:
 - From repository click on code button and copy clone cammand(Kindly make sure you choose ssh format).
